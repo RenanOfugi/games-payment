@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5438/games-checkout
+    username: admin
+    password: admin
+    driver-class-name: org.postgresql.Driver
+
+  kafka:
+    producer:
+      bootstrap-servers: 127.0.0.1:9092
+      auto-offset-reset: earliest
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
