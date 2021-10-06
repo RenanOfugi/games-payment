@@ -3,6 +3,7 @@ package com.games.ecommerce.gamespayment.service;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.games.ecommerce.gamespayment.entity.CheckoutEntity;
+import com.games.ecommerce.gamespayment.exceptions.ConvertDataException;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.springframework.kafka.annotation.KafkaListener;
@@ -26,7 +27,7 @@ public class GamesPaymentService {
         try {
             entity = mapper.readValue(data, CheckoutEntity.class);
         } catch (JsonProcessingException e) {
-            e.printStackTrace();
+            System.out.println("Não foi possível realizar a conversão");
         }
 
 
