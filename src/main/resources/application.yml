@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5438/games-checkout
+    url: jdbc:postgresql://localhost:5433/games-payment
     username: admin
     password: admin
     driver-class-name: org.postgresql.Driver
