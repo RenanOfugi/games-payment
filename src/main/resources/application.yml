@@ -6,7 +6,7 @@ spring:
     driver-class-name: org.postgresql.Driver
 
   kafka:
-    producer:
+    consumer:
       bootstrap-servers: 127.0.0.1:9092
       auto-offset-reset: earliest
       value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
