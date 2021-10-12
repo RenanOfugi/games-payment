@@ -25,5 +25,7 @@ spring:
       value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
 
+
+
 server:
-  port: 8081
+  port: 8082
